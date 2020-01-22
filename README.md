@@ -24,9 +24,17 @@ Dynomite Cluster Checker checks if a Dynomite cluster is working properly via Dy
 * Latency historical comparison
 
 ## Building
+
+Note that `gradlew` is in the `dynomite-cluster-checker` subdirectory.
+So you have to `cd` to that directory before running `gradlew`.
+
 ```bash
+cd dynomite-cluster-checker 
 ./gradlew clean build
 ```
+
+Also note that the version of Gradle being used (2.4) is rather old and doesn't support Java 11.
+You need to run the above commands using Java 8 instead.
 
 ## Checking Dynomite Cluster
 
